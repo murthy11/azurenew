@@ -1,0 +1,15 @@
+apiVersion: V1
+
+Kind: pod
+
+metadata:
+  name: myapp-pod
+  labels:
+   app: myapp
+
+spec:
+  container:
+    - name : nginx-container
+      image: nginx
+    - name : backend-container
+      image: redis
